@@ -75,7 +75,7 @@ class qnns:
                                     index_of = None
                                     [(new_value in i4) and (index_of := [i4.index(new_value), new_layer.index(i4)]) for i4 in new_layer] 
                                     if index_of is not None:
-                                        new_passed[index_of[1]][index_of[0]].append([i3[0][vector_1], i3[0][vector_1]]) # add pass types here later
+                                        new_passed[index_of[1]][index_of[0]].append(new_value) # add pass types here later
                                         if self.debug:
                                             print('advanced entanglement')
                                     else:
